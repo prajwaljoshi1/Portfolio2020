@@ -27,7 +27,7 @@ body {
 
 .header {
     height: 95vh;
-    background-image: linear-gradient(to right bottom,#00c6ff, #0072ff);
+    background-image: linear-gradient(to right bottom,#56ab2f, #a8e063);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     position: relative;
 }
@@ -41,6 +41,7 @@ body {
 .logo {
     height: 35px;
 }
+
 .text-box {
   position: absolute;
   top: 40%;
@@ -51,6 +52,8 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -58,6 +61,10 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 25px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
@@ -65,4 +72,40 @@ body {
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 17.7px;
+
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX( -100px);
+    }
+
+    80% {
+        transform: translateX( 10px);
+     }
+
+    100%{
+      opacity: 1;
+      transform: translateX( 0px);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+       opacity: 0;
+       transform: translateX( 100px);
+    }
+
+    80% {
+        transform: translateX( -10px);
+     }
+
+    100%{
+      opacity: 1;
+      transform: translateX( 0px);
+    }
 }
