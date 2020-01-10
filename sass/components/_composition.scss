@@ -3,36 +3,36 @@
     position: relative;
 
     &__photo {
-        width: 55%;
+        width: 40%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
         position: absolute;
         z-index: 10;
         transition: all .2s;
-        outline-offset: 1rem;
+        outline-offset: 0rem;
 
         &--p1 {
             left: 0;
             top: -2rem;
         }
 
-        &--p2 {
-            right: 0;
-            top: 2rem;
+        &--p4 {
+            right: 8rem;
+            top: -4rem;
         }
 
         &--p3 {
-            left: 20%;
-            top: 10rem;
+            left: 15%;
+            top: 15rem;
         }
 
-        &--p4 {
-            right: 20%;
-            top: 30rem;
+        &--p2 {
+            right: 0rem;
+            top: 12rem;
         }
 
         &--p5 {
             left: 20%;
-            top: 30rem;
+            top: 33rem;
         }
 
         &--p6 {
