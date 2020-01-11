@@ -3,3 +3,14 @@
     padding: 25rem 0;
     margin-top: -20vh;
 }
+
+
+.section-stack {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light );
+    transform: skewY(-7deg);
+    margin-top: -11rem;
+    & > * {
+        transform: skewY(7deg);
+    }
+}
