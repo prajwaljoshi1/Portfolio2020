@@ -109,6 +109,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
@@ -129,6 +132,10 @@ body {
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--primary {
+  background-color: #0575E6;
+  color: #fff; }
 
 .btn--white {
   background-color: #fff;
@@ -216,7 +223,7 @@ body {
       .project-card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ff7730, #ffb900); }
   .project-card:hover .project-card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .project-card:hover .project-card__side--back {
     transform: rotateY(0); }
 
