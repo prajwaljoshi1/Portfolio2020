@@ -247,7 +247,7 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg); }
   .experience__img {
-    height: 100%; }
+    width: 100%; }
   .experience__text {
     transform: skewX(12deg); }
 
