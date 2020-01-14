@@ -23,6 +23,31 @@
 }
 
 .section-experience {
-   background-color: $color-grey-light-1;
-   padding: 15rem 0;
+    background-image: linear-gradient(to right,  rgba($color-primary-dark, .3), rgba($color-primary-light, .3) );
+    padding: 15rem 0;
+}
+
+.section-contactme {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light );
+
+}
+
+.contactme {
+    background-image: linear-gradient(105deg,
+                            rgba(#cad5e3, .9) 0%,
+                            rgba(#cad5e3, .9) 50%,
+                            transparent 50%),         
+                        url(../img/contact-me.jpg);
+    background-size: 100%; 
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+    }
+
+    height: 70rem;
 }

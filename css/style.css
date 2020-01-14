@@ -77,7 +77,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #021B79, #0575E6);
+  background-image: linear-gradient(to right, #e73827, #f85032);
   background-clip: text;
   -webkit-background-clip: text;
   letter-spacing: .2rem;
@@ -134,7 +134,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--primary {
-  background-color: #0575E6;
+  background-color: #f85032;
   color: #fff; }
 
 .btn--white {
@@ -163,14 +163,14 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  color: #0575E6;
+  color: #f85032;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 2px solid #0575E6;
+  border-bottom: 2px solid #f85032;
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: #0575E6;
+  background-color: #f85032;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-2px); }
@@ -191,7 +191,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #021B79, #0575E6);
+    background-image: linear-gradient(to right, #e73827, #f85032);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
@@ -282,7 +282,7 @@ body {
       left: 60%;
       top: 30rem; }
     .composition__photo:hover {
-      outline: 1.5rem solid #0575E6;
+      outline: 1.5rem solid #f85032;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -317,7 +317,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #021B79, #0575E6);
+  background-image: linear-gradient(to right bottom, #e73827, #f85032);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   position: relative; }
   .header__logo-box {
@@ -340,7 +340,7 @@ body {
 
 .section-stack {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, #021B79, #0575E6);
+  background-image: linear-gradient(to right bottom, #e73827, #f85032);
   transform: skewY(-7deg);
   margin-top: -11rem; }
   .section-stack > * {
@@ -352,5 +352,19 @@ body {
   margin-top: -11.5rem; }
 
 .section-experience {
-  background-color: #f7f7f7;
+  background-image: linear-gradient(to right, rgba(231, 56, 39, 0.3), rgba(248, 80, 50, 0.3));
   padding: 15rem 0; }
+
+.section-contactme {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #e73827, #f85032); }
+
+.contactme {
+  background-image: linear-gradient(105deg, rgba(202, 213, 227, 0.9) 0%, rgba(202, 213, 227, 0.9) 50%, transparent 50%), url(../img/contact-me.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+  height: 70rem; }
+  .contactme__form {
+    width: 50%;
+    padding: 6rem; }
