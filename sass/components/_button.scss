@@ -16,7 +16,7 @@
     
     &:hover {
         transform: translateY(-0.3rem);
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -39,6 +39,7 @@
             
         //  }
      }
+     
     
     &--white {
         background-color: $color-white;
@@ -48,6 +49,13 @@
             background-color: $color-white;
          }
      }
+
+        &--icon {
+            background-color: transparent;
+            padding: 0;
+            border-radius: 3px;
+
+        }
     
      &::after {
         content: "";
@@ -96,7 +104,5 @@
         transform: translateY(0px)
 
     }
-
-
-
 }
+

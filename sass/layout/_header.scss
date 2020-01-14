@@ -17,15 +17,32 @@
 
     &__text-box {
         position: absolute;
-        top: 35%;
+        top: 40%;
         left:50%;
         transform: translate(-50%, -50%);
-        text-align: center;;
+        text-align: center;
       }
 
 
       &__social {
+        margin-top: 6rem;
           &--icon {
+            font-size: 6rem;
+            color: $color-white;
+            margin: 0 2.5rem;
+          }
+
+          &--icon:nth-child(-n + 2) {
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+
+          }
+
+          &--icon:nth-last-child(-n + 2) {
+            animation-name: moveInRight;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
               
           }
       }
