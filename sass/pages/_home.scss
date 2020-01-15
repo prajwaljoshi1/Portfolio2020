@@ -2,6 +2,10 @@
     background-color:$color-grey-light-1 ;
     padding: 25rem 0;
     margin-top: -20vh;
+
+    @include respond(sm) {
+        padding: 20rem 0;
+    }
 }
 
 
@@ -13,6 +17,10 @@
     & > * {
         transform: skewY(7deg);
     }
+
+    @include respond(sm) {
+        padding: 15rem 0;
+    }
 }
 
 .section-projects {
@@ -20,11 +28,19 @@
     padding: 25rem 0 10rem 0;
     margin-top: -11.5rem;
 
+    @include respond(sm) {
+        padding: 20rem 0 5rem 0;
+    }
+
 }
 
 .section-experience {
     background-image: linear-gradient(to right,  rgba($color-primary-dark, .3), rgba($color-primary-light, .3) );
     padding: 15rem 0;
+
+    @include respond(sm) {
+        padding: 10rem 0;
+    }
 }
 
 .section-contactme {
