@@ -5,3 +5,29 @@
         clear: both;
     }
 }
+
+
+
+/* 
+
+$breakpoint options 
+- xs 
+- sm
+- md
+- xl
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs {
+        @media (max-width: 37.5em) { @content }; // 600px
+    }
+    @if $breakpoint == sm {
+        @media (max-width: 56.25em) { @content };   // 900px
+    }
+    @if $breakpoint == md {
+        @media (max-width: 75em) { @content };   // 1200px
+    }
+    @if $breakpoint == xl {
+        @media (min-width: 112.5em) { @content };   // 1800px
+    }
+}
