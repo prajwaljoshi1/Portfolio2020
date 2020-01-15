@@ -288,32 +288,47 @@ body {
     z-index: 5;
     transition: all .2s;
     outline-offset: 0rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 0;
+          left: 0; } }
     .composition__photo--p4 {
       right: 8rem;
       top: -4rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p4 {
+          top: 0;
+          left: 0; } }
     .composition__photo--p3 {
       left: 15%;
       top: 15rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 0;
+          left: 0; } }
     .composition__photo--p2 {
       right: 0rem;
       top: 12rem; }
-    .composition__photo--p5 {
-      left: 20%;
-      top: 33rem; }
-    .composition__photo--p6 {
-      left: -30%;
-      top: 0rem; }
-    .composition__photo--p7 {
-      left: 60%;
-      top: 30rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: 0;
+          left: 0; } }
     .composition__photo:hover {
       outline: 1.5rem solid #f85032;
-      transform: scale(1.05) translateY(-0.5rem);
+      transform: scale(1.2) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
+      @media (max-width: 56.25em) {
+        .composition__photo:hover {
+          transform: scale(1.4); } }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
