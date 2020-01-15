@@ -233,6 +233,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
   transition: transform .3s; }
+  @media (max-width: 56.25em) {
+    .stack-box {
+      padding: 2rem; } }
   .stack-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -241,6 +244,9 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .stack-box__icon {
+        margin-bottom: 0; } }
   .stack-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -256,7 +262,7 @@ body {
   font-size: 1.6rem; }
 
 .experience {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 3px;
@@ -265,6 +271,14 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .experience {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .experience {
+      transform: skewX(0); } }
   .experience__shape {
     width: 15rem;
     height: 15rem;
@@ -274,10 +288,16 @@ body {
     clip-path: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .experience__shape {
+        transform: translateX(0) skewX(0); } }
   .experience__img {
     width: 100%; }
   .experience__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .experience__text {
+        transform: skewX(0); } }
 
 .composition {
   position: relative; }
@@ -628,7 +648,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-stack {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .section-projects {
   background-color: #f7f7f7;

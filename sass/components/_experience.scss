@@ -1,5 +1,5 @@
 .experience {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     background-color: $color-white;
     border-radius: 3px;
@@ -9,6 +9,16 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    @include respond(sm) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include respond(xs) {
+        transform: skewX(0);
+    }
+
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -17,7 +27,11 @@
         -webkit-shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
-        transform: translateX(-3rem) skewX(12deg);;
+        transform: translateX(-3rem) skewX(12deg);
+
+        @include respond(xs) {
+            transform: translateX(0) skewX(0);;
+        }
 
     }
 
@@ -27,6 +41,9 @@
 
     &__text {
         transform: skewX(12deg);
+        @include respond(xs) {
+            transform:  skewX(0);;
+        }
     }
 
 
