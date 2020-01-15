@@ -4,7 +4,6 @@ body {
     /* font-size: 16px; */
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 3rem;
     box-sizing: border-box;
 }
 
@@ -18,24 +17,33 @@ body {
   
     &--main {
       display: block;
-      font-size: 6rem;
+      font-size: 5rem;
       font-weight: 400;
-      letter-spacing: 2.5rem;
+      letter-spacing: 2rem;
   
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+
+      @include respond(xs) {
+         letter-spacing: 1rem;
+         font-size: 5rem;
+      }
   }
   
       &--sub {
           display: block;
-          font-size: 2.5rem;
+          font-size: 2rem;
           font-weight: 700;
-          letter-spacing: 1.75rem;
+          letter-spacing: 1.5rem;
   
           animation-name: moveInRight;
           animation-duration: 1s;
           animation-timing-function: ease-out;
+
+          @include respond(xs) {
+            letter-spacing: .5rem;
+         }
       }
   }
 
@@ -52,10 +60,21 @@ body {
       color: transparent;
       transition: all .2s;
 
+      @include respond(sm) {
+        font-size: 3rem;
+     }
+
+
+     @include respond(xs) {
+        font-size: 2.5rem;
+     }
+
       &:hover {
           transform: skewY(2deg) skewX(15deg) scale(1.1);
           text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
       }
+
+
       
   }
 

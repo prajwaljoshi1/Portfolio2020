@@ -1,8 +1,14 @@
 .header {
     height: 95vh;
     background-image: linear-gradient(to right bottom,$color-primary-dark, $color-primary-light);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
+
+    @include respond(xs) {
+        clip-path: polygon(0 0, 100% 0, 100%  85vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
 
 
     &__logo-box {

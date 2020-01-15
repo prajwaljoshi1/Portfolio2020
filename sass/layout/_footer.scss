@@ -6,5 +6,11 @@
         color: $color-primary;
         font-size: 2rem;
         text-align: center;
+
+        @include respond (sm) {
+            font-size: 1.5rem;
+        }
     }
+
+
 }
