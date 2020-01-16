@@ -27,15 +27,21 @@
         left:50%;
         transform: translate(-50%, -50%);
         text-align: center;
+       
+
+        @include respond(sm) {
+            width: 640px;
+            max-width: 100%
+        }
       }
 
 
       &__social {
         margin-top: 6rem;
           &--icon {
-            font-size: 6rem;
-            color: $color-white;
-            margin: 0 2.5rem;
+            font-size: 5rem;
+            color: $color-primary;
+            margin: 0 1.5rem;
           }
 
           &--icon:nth-child(-n + 2) {

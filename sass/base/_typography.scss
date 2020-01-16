@@ -4,7 +4,7 @@ body {
     /* font-size: 16px; */
     line-height: 1.7;
     color: $color-grey-dark;
-    box-sizing: border-box;
+
 }
 
 
@@ -27,7 +27,7 @@ body {
 
       @include respond(xs) {
          letter-spacing: 1rem;
-         font-size: 5rem;
+         font-size: 4rem;
       }
   }
   
@@ -43,6 +43,7 @@ body {
 
           @include respond(xs) {
             letter-spacing: .5rem;
+            font-size: 1.8rem;
          }
       }
   }

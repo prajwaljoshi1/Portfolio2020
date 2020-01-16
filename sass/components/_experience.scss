@@ -9,13 +9,11 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+
     @include respond(sm) {
         width: 100%;
         padding: 4rem;
         padding-left: 7rem;
-    }
-
-    @include respond(xs) {
         transform: skewX(0);
     }
 
@@ -29,7 +27,7 @@
         -webkit-clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
 
-        @include respond(xs) {
+        @include respond(sm) {
             transform: translateX(0) skewX(0);;
         }
 
@@ -41,7 +39,7 @@
 
     &__text {
         transform: skewX(12deg);
-        @include respond(xs) {
+        @include respond(sm) {
             transform:  skewX(0);;
         }
     }

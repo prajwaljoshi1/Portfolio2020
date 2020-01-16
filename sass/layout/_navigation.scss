@@ -17,11 +17,11 @@
         text-align: center;
         cursor: pointer;
         
-        @include respond (sm) {
+        @include respond(sm) {
             top: 4rem;
             right: 4rem;
         }
-        @include respond (xs) {
+        @include respond(xs) {
             top: 3em;
             right: 3rem;
         }
@@ -71,6 +71,7 @@
         transform: translate(-50%, -50%);
         list-style: none;
         text-align: center;
+        width: 100%;
     }
 
     &__item {

@@ -16,6 +16,9 @@
         width: 90%;
         display: block;
         transition: all .3s;
+        @include respond(xs) {
+            width: 100%;
+        }
 
 
         &::-webkit-input-placeholder {
@@ -63,6 +66,9 @@
         display: block;
         resize: none;
         transition: all .3s;
+        @include respond(xs) {
+            width: 100%;
+        }
 
 
         &::-webkit-input-placeholder {

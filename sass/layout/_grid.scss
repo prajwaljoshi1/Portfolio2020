@@ -3,7 +3,8 @@
     margin: 0 auto;
 
     @include respond(sm) {
-        max-width: 50rem;
+        max-width: 60rem;
+        padding: 0 3rem;
     }
    
     &:not(:last-child) {
