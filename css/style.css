@@ -299,6 +299,9 @@ body {
 
 .composition {
   position: relative; }
+  @media (max-width: 56.25em) {
+    .composition {
+      padding-left: 6rem; } }
   .composition__photo {
     width: 40%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -489,10 +492,15 @@ body {
         max-width: 100%; } }
   .header__social {
     margin-top: 6rem; }
+    @media (max-width: 56.25em) {
+      .header__social {
+        text-align: center; } }
     .header__social--icon {
       font-size: 5rem;
       color: #f85032;
-      margin: 0 1.5rem; }
+      margin: 0 1rem;
+      padding: 1rem;
+      border-radius: 10rem; }
     .header__social--icon:nth-child(-n + 2) {
       animation-name: moveInLeft;
       animation-duration: 1s;
@@ -695,4 +703,5 @@ body {
     padding: 6rem; }
     @media (max-width: 56.25em) {
       .contactme__form {
-        width: 100%; } }
+        width: 100%;
+        text-align: center; } }

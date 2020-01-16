@@ -1,5 +1,11 @@
 .composition {
 
+    @include respond(sm) {
+        padding-left: 6rem;
+
+     }
+
+
     position: relative;
 
     &__photo {

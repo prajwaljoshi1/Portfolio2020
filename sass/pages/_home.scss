@@ -76,7 +76,10 @@
         padding: 6rem;
         @include respond(sm) {
             width: 100%;
+            text-align: center;
         }
+
+        
 
     }
 
