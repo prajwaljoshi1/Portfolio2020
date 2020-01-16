@@ -28,7 +28,16 @@
         transform: translateX(-3rem) skewX(12deg);
 
         @include respond(sm) {
-            transform: translateX(0) skewX(0);;
+            transform: translateX(0) skewX(0);
+            width: 11rem;
+            height: 11rem;
+            padding: 0 1rem 1rem 0;
+        }
+
+        @include respond(xs) {
+            width: 5rem;
+            height: 5rem;
+            padding: 0 1rem 1rem 0;
         }
 
     }

@@ -23,12 +23,12 @@
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link" href="#about-me"><span>01</span>About Me</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#my-stack"><span>02</span>My Stack</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#my-apps"><span>03</span> MY APPS </a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#my-experience"><span>04</span>Experience</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#my-education"><span>05</span>Education</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#contact-me"><span>06</span>Contact Me</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#about-me">About&nbsp;&nbsp;Me</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#my-stack">My&nbsp; &nbsp; &nbsp;Stack</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#my-apps"> MY Projects </a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#my-experience">Experience</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#my-education">Education</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#contact-me">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -74,10 +74,18 @@
                             </p>
                             
                             <div class="header__social">
-                                <i class="btn btn--icon header__social--icon fab fa-linkedin"></i>
-                                <i class="btn btn--icon header__social--icon fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/prajwaljoshi1/">
+                                    <i class="btn btn--icon header__social--icon fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/prajwaljoshi">
+                                    <i class="btn btn--icon header__social--icon fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/prajwaljoshi1">
+                                    <i class="btn btn--icon header__social--icon fab fa-github-square"></i>
+                                </a>
+                                
+                                
                                 <!-- <i class="btn btn--icon header__social--icon fab fa-twitter-square"></i> -->
-                                <i class="btn btn--icon header__social--icon fab fa-github-square"></i>
                             </div>
                             
                         </h3>
@@ -300,9 +308,13 @@
 
 <script>
 
-    $('.navigation__link').on('click', function(){
-        console.log("hello");
+    $( document ).ready(function() {
+
+        $('.navigation__link').on('click', function(){
             $('.navigation__checkbox').prop("checked", false);
+
+        });
+
     });
 
 </script>

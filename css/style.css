@@ -73,7 +73,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
   margin-top: 5rem; }
   .heading-primary--main {
     display: block;
@@ -125,6 +125,12 @@ body {
   font-size: 1.9rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 1.8rem; } }
+  @media (max-width: 37.5em) {
+    .heading-tertiary {
+      font-size: 1.6rem; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -288,7 +294,15 @@ body {
     transform: translateX(-3rem) skewX(12deg); }
     @media (max-width: 56.25em) {
       .experience__shape {
-        transform: translateX(0) skewX(0); } }
+        transform: translateX(0) skewX(0);
+        width: 11rem;
+        height: 11rem;
+        padding: 0 1rem 1rem 0; } }
+    @media (max-width: 37.5em) {
+      .experience__shape {
+        width: 5rem;
+        height: 5rem;
+        padding: 0 1rem 1rem 0; } }
   .experience__img {
     width: 100%; }
   .experience__text {
@@ -482,7 +496,7 @@ body {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -569,7 +583,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 15;
+  z-index: -5;
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -612,7 +626,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  z-index: 15; }
 
 .navigation__icon {
   position: relative;
