@@ -158,12 +158,16 @@ body {
 .u-margin-top-verybig {
   margin-top: 11rem !important; }
 
+.u-padding-top-small {
+  padding-top: 1.5rem !important; }
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.5rem 8rem;
   display: inline-block;
   border-radius: 10rem;
+  border: 0;
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
