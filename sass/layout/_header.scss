@@ -43,6 +43,9 @@
             text-align: center;
         }
 
+          &--link {
+            text-decoration: none;
+          }
 
           &--icon {
             font-size: 5rem;
@@ -58,6 +61,8 @@
             animation-timing-function: ease-out;
 
           }
+
+
 
           &--icon:nth-last-child(-n + 2) {
             animation-name: moveInRight;

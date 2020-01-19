@@ -304,9 +304,8 @@ body {
         padding: 0 1rem 1rem 0; } }
     @media (max-width: 37.5em) {
       .experience__shape {
-        width: 5rem;
-        height: 5rem;
-        padding: 0 1rem 1rem 0; } }
+        float: none;
+        margin: 3rem auto; } }
   .experience__img {
     width: 100%; }
   .experience__text {
@@ -314,6 +313,9 @@ body {
     @media (max-width: 56.25em) {
       .experience__text {
         transform: skewX(0); } }
+    @media (max-width: 56.25em) {
+      .experience__text {
+        text-align: left; } }
 
 .composition {
   position: relative; }
@@ -513,6 +515,8 @@ body {
     @media (max-width: 56.25em) {
       .header__social {
         text-align: center; } }
+    .header__social--link {
+      text-decoration: none; }
     .header__social--icon {
       font-size: 5rem;
       color: #f85032;
