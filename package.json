@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/prajwaljoshi1/portfolio2020.git#readme",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   }
 }
